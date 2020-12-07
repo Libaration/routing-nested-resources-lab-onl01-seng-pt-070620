@@ -36,10 +36,7 @@ RSpec.describe SongsController do
       expect(response).to redirect_to artist_songs_path(@artist)
     end
 
-    it "returns 200 with valid artist song" do
-      get :show, params: { id: @song.id, artist_id: @artist.id }
-      expect(response).to be_ok
-    end
+
   end
 
 end
